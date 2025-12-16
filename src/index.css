@@ -1,3 +1,77 @@
 @tailwind base; 
 @tailwind components; 
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;   
+}
+
+/* Navigation Styling*//* Nav container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: black; 
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+}
+/* Links container */
+.nav-links-container {
+  display: flex;
+  gap: 40px; /* Space between links */
+}
+
+/* Style NavLink components */
+.nav-links-container a { /* Targets NavLink (renders as <a>) */
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links-container a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* Active link styling (when on that page) */
+.nav-links-container a.active {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+
+button {
+  padding: 10px 24px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+  color: white
+}
+
