@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import React from 'react'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-        Pillow  
-    </>
+    <div>
+      asdf
+    </div>
   )
 }
 
